@@ -5,7 +5,7 @@
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	  <title>Akumix | Home</title>
+	  <title>Akumix | Listen</title>
 	  <script src="https://kit.fontawesome.com/bd1811e74a.js" crossorigin="anonymous"></script>
   </head>
   <!-- CSS -->
@@ -16,6 +16,7 @@
     body {
       color: #120630;
       margin: 0 auto;
+      transition: 1s;
       padding: 0 auto;
       font-size: 20px;
       background: white;
@@ -41,27 +42,6 @@
       color: #bba4f4;
       font-size: 25px;
       font-weight: normal;
-    }
-    
-    .listen-akumix {
-      outline: none;
-      color: #662BFF;
-      font-size: 15px;
-      cursor: pointer;
-      background: none;
-      transition: 0.2s;
-      padding-top: 15px;
-      padding-left: 20px;
-      border-radius: 3px;
-      padding-right: 20px;
-      padding-bottom: 15px;
-      border: 1px solid #662BFF;
-      font-family: Abril Fatface;
-    }
-    
-    .listen-akumix:hover {
-      color: white;
-      background: #662BFF;
     }
     
     .listen-spotify {
@@ -107,7 +87,7 @@
     }
   </style>
   <!-- HTML -->
-  <body>
+  <body id="body">
     <div class="navbar">
       <div class="navbar navcontent">
         <img src="https://akumix.github.io/img/aKU7x.png" height="70px;">
@@ -115,13 +95,12 @@
     </div>
     <div class="content">
       <center>
-        <h2 style="margin-top: 100px;margin-bottom: -50px;">Song of the Week</h2>
-        <h1 style="margin-bottom: -20px;"><span style="color: #662bff;font-size: 70px;">“</span>jealousy,&nbsp; jealousy</h1>
-        <h2>by <span style="color: #120630;">Olivia Rodrigo</span></h2>
-        <a href="https://akumix.github.io/songs/olivia-rodrigo/jealousy-jealousy"><button class="listen-akumix"><i class="fas fa-play"></i>&nbsp; &nbsp;Listen on Akumix</button></a>
+        <h1><i class="fas fa-headphones-alt"></i>&nbsp; listen to <span style="color: #662BFF;">jealousy,&nbsp; jealousy</span></h1>
+        <audio id="listen" src="https://akumix.github.io/songs/olivia-rodrigo/jealousy-jealousy/listen.mp3" controls></audio>
+        
+        <h2 style="margin-top: 100px;">Audio's not workin'?<br>That's a shame, but here are some<br>alternatives if you wanna keep the music goin'.</h2>
         <a href="https://open.spotify.com/track/0MMyJUC3WNnFS1lit5pTjk?si=fc096908b5ed4ed4"><button class="listen-spotify"><i class="fab fa-spotify"></i>&nbsp; &nbsp;Listen on Spotify</button></a>
         <a href="https://music.apple.com/us/album/jealousy-jealousy/1560735414?i=1560735561"><button class="listen-applemusic"><i class="fab fa-apple"></i>&nbsp; &nbsp;Listen on Apple Music</button></a>
-        <a href="https://akumix.github.io/about"><h2 style="color: #120630;text-decoration-color: #662BFF;margin-top: 25px;font-size: 18px;">What is Akumix?</h2></a>
       </center>
     </div>
   </body>
