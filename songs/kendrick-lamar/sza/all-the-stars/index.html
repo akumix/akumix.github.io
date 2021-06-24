@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- ©2021 Akumix by Akuro. All rights reserved -->
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <title>Akumix | Listen</title>
+	  <link rel="icon" type="image/png" href="https://akumix.github.io/img/aKU7x.png">
+	  <script src="https://kit.fontawesome.com/bd1811e74a.js" crossorigin="anonymous"></script>
+  </head>
+  <!-- CSS -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    
+    body {
+      color: #120630;
+      margin: 0 auto;
+      transition: 1s;
+      padding: 0 auto;
+      font-size: 20px;
+      background: white;
+      font-family: Raleway;
+    }
+    
+    h1 {
+      font-size: 50px;
+      font-weight: normal;
+      font-family: Abril Fatface;
+    }
+    
+    .navbar {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      background: white;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    h2 {
+      color: #bba4f4;
+      font-size: 25px;
+      font-weight: normal;
+    }
+    
+    .listen-spotify {
+      outline: none;
+      color: #1ED760;
+      font-size: 15px;
+      cursor: pointer;
+      background: none;
+      transition: 0.2s;
+      padding-top: 15px;
+      padding-left: 20px;
+      border-radius: 3px;
+      padding-right: 20px;
+      padding-bottom: 15px;
+      border: 1px solid #1ED760;
+      font-family: Abril Fatface;
+    }
+    
+    .listen-spotify:hover {
+      color: white;
+      background: #1ED760;
+    }
+    
+    .listen-applemusic {
+      outline: none;
+      color: black;
+      font-size: 15px;
+      cursor: pointer;
+      background: none;
+      transition: 0.2s;
+      padding-top: 15px;
+      padding-left: 20px;
+      border-radius: 3px;
+      padding-right: 20px;
+      padding-bottom: 15px;
+      border: 1px solid black;
+      font-family: Abril Fatface;
+    }
+    
+    .listen-applemusic:hover {
+      color: white;
+      background: black;
+    }
+  </style>
+  <!-- HTML -->
+  <body id="body">
+    <div class="navbar">
+      <div class="navbar navcontent">
+        <img src="https://akumix.github.io/img/aKU7x.png" height="70px;">
+      </div>
+    </div>
+    <div class="content">
+      <center>
+        <h1><i class="fas fa-headphones-alt"></i>&nbsp; listen to <span style="color: #662BFF;">All&nbsp; The&nbsp; Stars</span></h1>
+        <audio id="listen" src="https://akumix.github.io/songs/kendrick-lamar/sza/all-the-stars/listen.mp3" controls></audio>
+        
+        <h2 style="margin-top: 100px;">Audio's not workin'?<br>That's a shame, but here are some<br>alternatives if you wanna keep the music goin'.</h2>
+        <a href="https://open.spotify.com/track/3GCdLUSnKSMJhs4Tj6CV3s?si=a297144296324c94"><button class="listen-spotify"><i class="fab fa-spotify"></i>&nbsp; &nbsp;Listen on Spotify</button></a>
+        <a href="https://music.apple.com/us/album/all-the-stars/1440906927?i=1440906939"><button class="listen-applemusic"><i class="fab fa-apple"></i>&nbsp; &nbsp;Listen on Apple Music</button></a>
+      </center>
+    </div>
+  </body>
+</html>
